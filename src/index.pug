@@ -1,0 +1,21 @@
+extends template/layout 
+
+block head
+    include template/head.pug
+    link(rel="stylesheet", href="css/style.css")
+
+block content 
+    header.welcome-header 
+        h1.welcome-header__title Wecome to kakao Clone 
+        p.welcome-header__text If you have a kakao Account, log in with your email or phone number.
+
+    form#login-form(action="friends.html", method="get")  
+        input(name="username" type="text" placeholder="Email or phone number")
+        input(name="password" type="password" placeholder="Password")
+        input(type="submit" value="Log In")
+        a(href="#") Find kakao Account or Password  
+
+block footer
+
+block script
+    script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")
