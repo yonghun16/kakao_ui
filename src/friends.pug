@@ -1,9 +1,15 @@
-doctype html
-html(lang="ko")
-    head
+extends template/layout 
 
-    body 
-        nav 
-            ul 
-                li 
-                    a(href="")
+block head
+    include template/head.pug
+
+block content 
+    nav 
+        ul 
+            li 
+                a(href="")
+
+block footer
+
+block script
+    script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")
