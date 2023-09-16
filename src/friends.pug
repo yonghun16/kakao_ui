@@ -2,12 +2,24 @@ extends template/layout
 
 block head
     include template/head.pug
+    title Friends - kakao Clone 
 
 block content 
-    nav 
-        ul 
-            li 
-                a(href="")
+    nav.nav
+        ul.nav__list
+            li.nav__btn
+                a.nav__link(href="friends.html")
+                i(class="fa-solid fa-user fa-lg")
+            li.nav__btn
+                a.nav__link(href="#")
+                i(class="fa-regular fa-comment fa-lg")
+            li.nav__btn
+                a.nav__link(href="#")
+                i(class="fa-solid fa-magnifying-glass fa-lg")
+            li.nav__btn
+                a.nav__link(href="#")
+                i(class="fa-solid fa-ellipsis fa-lg")
+
 
 block footer
 
