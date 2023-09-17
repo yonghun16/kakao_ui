@@ -4,7 +4,31 @@ block head
     include template/head.pug
     title Friends - kakao Clone 
 
+block header
+    header.screen-header
+        h1.screen-header__title Friends
+        .screen-header__icons
+            span
+                i(class="fa-solid fa-magnifying-glass fa-lg")
+            span
+                i(class="fa-solid fa-music fa-lg")
+            span
+                i(class="fa-solid fa-gear fa-lg")
+
 block content 
+    a#friends-display-link
+        i(class="fa-solid fa-circle-info")
+        span Friends's Names Display
+        i.fa-solid.fa-chevron-right.fa-xs
+
+    .user-component
+        div.user-component__column
+            img.user-component__avatar(src="img/profile.png")
+            .user-component__text
+                h4.user-component__title
+                    span Frontend16
+        div.user-component__column
+
     nav.nav
         ul.nav__list
             li.nav__btn

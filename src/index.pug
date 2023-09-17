@@ -4,11 +4,12 @@ block head
     include template/head.pug
     title Login - Kakao Clone 
 
-block content 
+block header
     header.welcome-header 
         h1.welcome-header__title Wecome to kakao Clone 
         p.welcome-header__text If you have a kakao Account, log in with your email or phone number.
 
+block content 
     form#login-form(action="friends.html", method="get")  
         input(name="username" type="text" placeholder="Email or phone number")
         input(name="password" type="password" placeholder="Password")

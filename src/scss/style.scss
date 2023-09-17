@@ -3,15 +3,17 @@
 @import "_reset";
 @import "_variables";
 
-// componants
-@import "componant/status-bar";
-@import "componant/nav-bar";
+// componaets
+@import "components/status-bar";
+@import "components/nav-bar";
+@import "components/screen-header";
 
 // Screens
 @import "screens/login";
+@import "screens/friends";
 
 body {
+  color: $basic-font-color;
   font-family: "Open Sans", sans-serif;
-  height: 500vh;
 }
 
