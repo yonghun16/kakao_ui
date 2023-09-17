@@ -1,4 +1,8 @@
-.user-component,
+.user-component {
+  display: flex;
+  align-items: center;
+}
+
 .user-component__column {
   &:first-child {
     display: flex;
@@ -11,6 +15,11 @@
   height: 70px;
   border-radius: 27px;
   margin-right: 20px;
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
 }
 
 .user-component__title {
