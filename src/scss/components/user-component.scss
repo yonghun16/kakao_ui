@@ -11,6 +11,9 @@
   }
   &:last-child {
     color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -43,6 +46,10 @@
 .user-component__subtitle {
   margin-top: 5px;
   font-size: 17px;
-  color: rgba($color: #000000, $alpha: 0.5);
+  color: rgba($color: #000000, $alpha: 0.4);
 }
 
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
