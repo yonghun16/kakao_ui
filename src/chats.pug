@@ -1,0 +1,52 @@
+extends template/layout 
+
+block head
+    include template/head.pug
+    title Chats - kakao Clone 
+
+block header
+    header.screen-header
+        h1.screen-header__title Chats 
+        .screen-header__icons
+            span
+                i(class="fa-solid fa-magnifying-glass fa-lg")
+            span 
+                i(class="fa-regular fa-comment-dots fa-lg")
+            span
+                i(class="fa-solid fa-music fa-lg")
+            span
+                i(class="fa-solid fa-gear fa-lg")
+
+block content 
+    main.main-screen
+        .user-component
+            div.user-component__column
+                img.user-component__avatar.user-component__avatar(src="img/kakao_ch.png")
+                .user-component__text
+                    h4.user-component__title
+                        span KakaoTalk
+                    h6.user-component__subtitle
+                        span Please check MyKakao Acount info 
+            div.user-component__column 
+
+    //- nav-bar.scss
+    nav.nav 
+        ul.nav__list
+            li.nav__btn
+                a.nav__link(href="friends.html")
+                    i(class="fa-regular fa-user fa-xl")
+            li.nav__btn
+                a.nav__link(href="chats.html")
+                    span.nav__notification 1
+                    i(class="fa-solid fa-comment fa-xl")
+            li.nav__btn 
+                a.nav__link(href="find.html")
+                    i(class="fa-solid fa-magnifying-glass fa-xl")
+            li.nav__btn
+                a.nav__link(href="more.html")
+                    i(class="fa-solid fa-ellipsis fa-xl")
+
+block footer
+
+block script
+    script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")
