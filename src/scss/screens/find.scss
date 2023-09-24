@@ -1,7 +1,6 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
 
   .find-icons__icon {
     display: flex;
@@ -18,3 +17,22 @@
   }
 }
 
+.recommended-friends {
+  margin: 25px 0px;
+  border-top: $main-border; 
+  padding: 25px 0;
+  border-bottom: $main-border; 
+
+  .recommended-friends__title {
+    font-size: 14px;
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+
+  .recommended-friends__friends-list {
+    margin: 100px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+}
