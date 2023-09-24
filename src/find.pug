@@ -1,0 +1,51 @@
+extends template/layout 
+
+block head
+    include template/head.pug
+    title Find - kakao Clone 
+
+block header
+    header.screen-header
+        h1.screen-header__title Find 
+        .screen-header__icons
+            span
+                i(class="fa-solid fa-magnifying-glass fa-lg")
+            span
+                i(class="fa-solid fa-gear fa-lg")
+
+block content 
+    main.main-screen   
+        .find-icons 
+            .find-icons__icon
+                i(class="fas fa-qrcode") 
+                span QR Code 
+            .find-icons__icon
+                i(class="fa-regular fa-address-book")
+                span Add by Contacts  
+            .find-icons__icon
+                i(class="fa-solid fa-fingerprint")
+                span Add by ID 
+            .find-icons__icon 
+                i(class="fa-regular fa-envelope")
+                span Invite 
+                
+    //- nav-bar.scss
+    nav.nav 
+        ul.nav__list
+            li.nav__btn
+                a.nav__link(href="friends.html")
+                    i(class="fa-regular fa-user fa-xl")
+            li.nav__btn
+                a.nav__link(href="chats.html")
+                    i(class="fa-regular fa-comment fa-xl")
+            li.nav__btn 
+                a.nav__link(href="find.html")
+                    i(class="fa-solid fa-magnifying-glass fa-xl")
+            li.nav__btn
+                a.nav__link(href="more.html")
+                    i(class="fa-solid fa-ellipsis fa-xl")
+
+block footer
+
+block script
+    script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")
