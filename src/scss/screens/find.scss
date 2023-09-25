@@ -36,3 +36,59 @@
     color: rgba($color: #000000, $alpha: 0.4);
   }
 }
+
+.open-chat {
+  .open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 25px;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+}
+
+.open-post {
+  display: flex;
+
+  .open-post__title {
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  .open-post__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .open-post__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .open-post__member-count {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+
+    .divider {
+      width: 2px;
+      height: 15px;
+      margin: 0 5px;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .open-post__member-status {
+      color: #ffb0e0;
+    }
+  }
+}
