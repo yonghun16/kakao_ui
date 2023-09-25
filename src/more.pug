@@ -1,0 +1,70 @@
+extends template/layout 
+
+block head
+    include template/head.pug
+    title More - kakao Clone 
+
+block header
+    header.screen-header
+        h1.screen-header__title More 
+        .screen-header__icons
+            span
+                i(class="fa-solid fa-magnifying-glass fa-lg")
+            span
+                i(class="fa-solid fa-music fa-lg")
+            span
+                i(class="fa-solid fa-gear fa-lg")
+
+block content 
+    main.main-screen.more-screen   
+        .user-component
+            div.user-component__column
+                img.user-component__avatar.user-component__avatar--xl(src="img/profile.png")
+                .user-component__text
+                    h4.user-component__title
+                        span Frontend16
+                    h6.user-component__subtitle
+                        span + 898-382-0923
+            div.user-component__column
+                i(class="fa-regular fa-message fa-xl")     
+        .icon-row 
+            .icon-row__icon
+                i(class="fa-regular fa-calendar")
+                span Calendar 
+            .icon-row__icon
+                i(class="fa-regular fa-face-smile")
+                span Emoticons  
+            .icon-row__icon
+                i(class="fa-solid fa-palette")
+                span Themes 
+            .icon-row__icon 
+                i(class="fa-solid fa-file-invoice-dollar")
+                span Account 
+        .more-suggestions 
+            h4.more-suggestions__title Suggestions 
+            .more-suggestions__icons 
+                .more-suggestions__icon 
+                    .more-suggestions__icon-image
+                        i(class="fa-solid fa-quote-right")
+                    span.more-suggestions__icon-text KaKao Story 
+
+    //- nav-bar.scss
+    nav.nav 
+        ul.nav__list
+            li.nav__btn
+                a.nav__link(href="friends.html")
+                    i(class="fa-regular fa-user fa-xl")
+            li.nav__btn
+                a.nav__link(href="chats.html")
+                    i(class="fa-regular fa-comment fa-xl")
+            li.nav__btn 
+                a.nav__link(href="find.html")
+                    i(class="fa-solid fa-magnifying-glass fa-xl")
+            li.nav__btn
+                a.nav__link(href="more.html")
+                    i(class="fa-solid fa-ellipsis fa-xl")
+
+block footer
+
+block script
+    script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")

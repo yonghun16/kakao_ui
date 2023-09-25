@@ -9,11 +9,13 @@
 @import "components/screen-header";
 @import "components/user-component";
 @import "components/badge";
+@import "components/icon-row";
 
 // Screens
 @import "screens/login";
 @import "screens/friends";
 @import "screens/find";
+@import "screens/more";
 
 body {
   color: $basic-font-color;
