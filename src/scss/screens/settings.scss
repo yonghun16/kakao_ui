@@ -4,10 +4,17 @@
   font-size: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   i {
     margin-right: 15px;
     opacity: 0.8;
+  }
+
+  .settings__setting-column {
+    &:last-child {
+      opacity: 0.5;
+    }
   }
 }
 

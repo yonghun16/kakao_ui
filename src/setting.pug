@@ -6,8 +6,9 @@ block head
 
 block header
     header.alt-header
-        .alt-header__column 
-            i(class="fa-solid fa-angle-left fa-2x")
+        .alt-header__column
+            a(href="more.html")
+                i(class="fa-solid fa-angle-left fa-2x")
         .alt-header__column
             h1.alt-header__title Settings  
         .alt-header__column 
@@ -17,15 +18,20 @@ block content
     main.main-screen
         ul.settings-list 
             li.settings__setting
-                i(class="fa-solid fa-bullhorn")
-                span Notices 
+                .settings__setting-column 
+                    i(class="fa-solid fa-bullhorn")
+                    span Notices 
+                .settings__setting-column                 
             li.settings__setting
-                i(class="fa-solid fa-flask")
-                span KaKao Lab 
+                .settings__setting-column 
+                    i(class="fa-solid fa-flask")
+                    span KaKao Lab 
+                .settings__setting-column                     
             li.settings__setting
-                i(class="fa-solid fa-circle-info")
-                span Version           
-          
+                .settings__setting-column 
+                    i(class="fa-solid fa-circle-info")
+                    span Version           
+                .settings__setting-column Latest Version        
 
     //- nav-bar.scss
     nav.nav 

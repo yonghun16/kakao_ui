@@ -1,0 +1,27 @@
+doctype html
+
+html(lang="ko")
+    head
+        include template/head.pug
+        title Chat - kakao Clone 
+
+    body#chat-screen  
+        include partials/status-bar.pug
+        block header
+            header.alt-header
+                .alt-header__column
+                    a(href="more.html")
+                        i(class="fa-solid fa-angle-left fa-lg")
+                .alt-header__column
+                    h1.alt-header__title Frontend16  
+                .alt-header__column 
+                    i(class="fa-solid fa-magnifying-glass fa-lg")
+                    i(class="fa-solid fa-bars fa-lg")
+
+        block content 
+            main.main-screen
+
+        block footer
+
+        block script
+            script(src="https://kit.fontawesome.com/7489903411.js" crossorigin="anonymous")

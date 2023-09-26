@@ -20,17 +20,18 @@ block header
 
 block content 
     main.main-screen
-        .user-component
-            div.user-component__column
-                img.user-component__avatar.user-component__avatar(src="img/kakao_ch.png")
-                .user-component__text
-                    h4.user-component__title
-                        span KakaoTalk
-                    h6.user-component__subtitle
-                        span Please check MyKakao Acount info 
-            div.user-component__column 
-                span.user-component__time 21:22
-                span.badge 1
+        a(href="chat.html")
+            .user-component
+                div.user-component__column
+                    img.user-component__avatar.user-component__avatar(src="img/kakao_ch.png")
+                    .user-component__text
+                        h4.user-component__title
+                            span KakaoTalk
+                        h6.user-component__subtitle
+                            span Please check MyKakao Acount info 
+                div.user-component__column 
+                    span.user-component__time 21:22
+                    span.badge 1
                 
 
     //- nav-bar.scss
