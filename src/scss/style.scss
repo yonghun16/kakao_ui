@@ -6,6 +6,7 @@
 // componaets
 @import "components/status-bar";
 @import "components/nav-bar";
+@import "components/alt-screen-header";
 @import "components/screen-header";
 @import "components/user-component";
 @import "components/badge";
@@ -16,6 +17,7 @@
 @import "screens/friends";
 @import "screens/find";
 @import "screens/more";
+@import "screens/settings";
 
 body {
   color: $basic-font-color;
