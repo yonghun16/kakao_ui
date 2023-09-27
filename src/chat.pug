@@ -5,21 +5,25 @@ html(lang="ko")
         include template/head.pug
         title Chat - kakao Clone 
 
-    body#chat-screen  
-        include partials/status-bar.pug
+    body#chat-screen
+        include ../partials/status-bar.pug
         block header
             header.alt-header
                 .alt-header__column
-                    a(href="more.html")
+                    a(href="chats.html")
                         i(class="fa-solid fa-angle-left fa-lg")
                 .alt-header__column
                     h1.alt-header__title Frontend16  
                 .alt-header__column 
-                    i(class="fa-solid fa-magnifying-glass fa-lg")
-                    i(class="fa-solid fa-bars fa-lg")
+                    span 
+                        i(class="fa-solid fa-magnifying-glass fa-lg")
+                    span
+                        i(class="fa-solid fa-bars fa-lg")
 
         block content 
-            main.main-screen
+            main.main-screen.main-chat
+                .chat__timestamp Tusday, June 30, 2023
+
 
         block footer
 
