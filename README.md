@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=Kakao%20Talk%20UI%20-%20Clone&fontSize=45&animation=fadeIn&fontAlignY=38&desc=FrontEnd16&descAlignY=55&descAlign=85)
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/yonghun16/kakao_ui/blob/main/frontimage.png?raw=true" width=500px />
+<img src="https://github.com/yonghun16/kakao_ui/blob/main/frontimage.png?raw=true" width=800px />
 	
 <ul>
 	<li>
