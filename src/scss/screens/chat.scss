@@ -30,5 +30,47 @@
   background-color: #92a4b2;
   padding: 15px;
   border-radius: 25px;
+  margin-bottom: 2rem;
 }
+
+.message-row {
+  width: 100%;
+  display: flex;
+
+  img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 40%;
+    margin-right: 0.8rem;
+  }
+
+  .message__author {
+    opacity: 0.8;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+
+  .message__info {
+    display: flex;
+    align-items: flex-end;
+
+    .message_bubble {
+      font-size: 1.1rem;
+      background-color: white;
+      padding: 0.6rem 0.7rem;
+      border-radius: 0.8rem;
+      border-top-left-radius: 0px;
+      margin-right: 0.3rem;
+    }
+
+    .message_time {
+      opacity: 0.8;
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+
 
