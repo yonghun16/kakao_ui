@@ -6,7 +6,7 @@ html(lang="ko")
         title Chat - kakao Clone 
 
     body#chat-screen
-        include ../partials/status-bar.pug
+        include partials/status-bar.pug
         block header
             header.alt-header
                 .alt-header__column
@@ -22,8 +22,14 @@ html(lang="ko")
 
         block content 
             main.main-screen.main-chat
-                .chat__timestamp Tusday, June 30, 2023
-
+                .chat-timestamp Tusday, June 30, 2023
+                .message-row 
+                    img(src="img/kakao_ch.png")
+                    .message-row__content 
+                        span.message__author Kakao Talk 
+                        .message__info 
+                            span.message_bubble Hi 
+                            span.message_time 21:27
 
         block footer
 
