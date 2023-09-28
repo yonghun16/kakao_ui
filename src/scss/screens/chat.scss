@@ -87,5 +87,64 @@
   }
 }
 
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display : flex;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  align-items: center;
 
+  i {
+    opacity: 0.5;
+  }
+
+  .reply__column {
+    &:first-child {
+      width: 6%;
+    }
+
+    &:last-child {
+      width: 94%;
+      position: relative;
+
+      &>i, button {
+        position: absolute;
+        right: 0;
+        top: 0.7rem;
+      }
+
+      &>i {
+        right: 2.3rem;
+      }
+
+      button {
+        top: 0.2rem;
+        right: 0.2rem;
+        background-color: $yellow;
+        border: none;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        &:focus, &:active {
+          outline: none;
+        }
+        i {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  input {
+    padding: 0.7rem;
+    width: 100%;
+    border: $main-border;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+  }
+}
 
