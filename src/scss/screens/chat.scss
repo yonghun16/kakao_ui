@@ -36,6 +36,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 1.5rem;
 
   img {
     width: 3.5rem;
@@ -69,7 +70,21 @@
       font-size: 0.8rem;
     }
   }
+}
 
+.message-row--own {
+  justify-content: flex-end;
+
+  .message__info {
+    flex-direction: row-reverse;
+
+    .message_bubble {
+      background-color: $yellow;
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0px;
+      margin-left: 0.3rem;
+    }
+  }
 }
 
 
