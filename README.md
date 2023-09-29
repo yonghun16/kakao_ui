@@ -8,7 +8,7 @@
 		<a href="https://yonghun16.github.io/kakao_ui/"> Clone 보러가기 </a>
 	</li>
 	<li>
-		반응형(O), 백엔드(X)
+		Multi-page, 반응형
 	</li>
 </ul>
 </br>
